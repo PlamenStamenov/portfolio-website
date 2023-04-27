@@ -1,0 +1,118 @@
+.navigation {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+    
+
+    .navigation__title {
+        margin-bottom: 5px;
+    }
+
+    .navigation__subtitle {
+        margin: 0;
+    }
+
+    img {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        border: 3px solid #fff;
+        border-radius: 50%;
+    }
+
+    .navigation__list {
+        padding: 0;
+        margin: 55px 0;
+        list-style: none;
+        font-weight: 500;
+
+        li {
+            margin: 12px 0;
+            
+            &.active::before {
+                content: "";
+                background: #ff5959;
+                display: block;
+                height: 18px;
+                position: absolute;
+                width: 3px;
+                left: 0;
+            }
+
+            a {
+                display: inline-block;
+                transition: transform 750ms;
+                text-decoration: none;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            &:hover {
+                a {
+                    transform: translateX(10px);
+                }
+            }   
+        }
+    }
+
+    .navigation__footer {
+        .navigation__social {
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            font-size: 14px;
+            gap: 12px;
+            
+            li {
+                a {
+                    color: #fff;
+                    background: #ff5959;
+                    border-radius: 50%;
+                    display: block;
+                    height: 30px;
+                    line-height: 28px;
+                    text-align: center;
+                    width: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: transform 750ms;
+                }
+
+                &:hover {
+                    a {
+                        transform: translatey(-3px);
+                        color: #ff5959;
+                        background: #fff;
+                        box-shadow: 0 8px 15px 0 rgba(0,0,0,.2);
+                    }
+                } 
+            }
+            
+        }
+        .copyright {
+            margin-top: 25px;
+            font-size: 13px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        img {
+            display: none;
+        }
+
+        .navigation__title {
+            display: none;
+        }
+
+        .navigation__subtitle {
+            display: none;
+        }
+    }
+}

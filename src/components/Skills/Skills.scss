@@ -1,0 +1,48 @@
+.skills {
+    color: #888;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    padding: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2);
+
+    .skills__title {
+        font-size: 24px;
+        font-weight: 600;
+        color: #000;
+        margin: 0;
+
+        &::after {
+            content: "";
+            background: #ff5959;
+            border-radius: 25px;
+            display: block;
+            height: 5px;
+            margin-top: 14px;
+            width: 30px;
+        }
+    }
+
+    .skills__description {
+        margin: 50px 0;
+    }
+
+    .skills__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        .skills__column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 50%;
+        }
+    } 
+    @media screen and (max-width: 400px) {
+        padding: 50px 10%;
+    }
+}
