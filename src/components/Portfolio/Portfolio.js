@@ -6,7 +6,7 @@ const Portfolio = () => {
     const [selectedFilter, setSelectedFilter] = useState('All');
 
     const galleryItems = [
-        { id: 'HTML & CSS', src: "https://via.placeholder.com/300x200" },
+        { id: 'ReactJS', src: `${process.env.PUBLIC_URL}/assets/pass_generator_react.jpg`, alt: 'Password Generator React', link: 'https://password-generator-6f2ac.web.app/' },
         { id: 'HTML & CSS', src: "https://via.placeholder.com/300x200" },
         { id: 'HTML & CSS', src: "https://via.placeholder.com/300x200" },
         { id: 'ReactJS', src: "https://via.placeholder.com/300x200" },
@@ -51,7 +51,7 @@ const Portfolio = () => {
                 <div className="portfolio__gallery">
                     {filteredItems.slice(0, visibleItems).map((item, index) => (
                         <div className="portfolio__gallery-item" key={index}>
-                            <img src={item.src} alt="placeholder" />
+                            <a href={item.link} target='_blank'><img src={item.src} alt={item.alt} /></a>
                         </div>
                     ))}
                 </div>
