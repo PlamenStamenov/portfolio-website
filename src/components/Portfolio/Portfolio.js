@@ -7,17 +7,9 @@ const Portfolio = () => {
 
     const galleryItems = [
         { id: 'ReactJS', src: `${process.env.PUBLIC_URL}/assets/pass_generator_react.jpg`, alt: 'Password Generator React', link: 'https://password-generator-6f2ac.web.app/' },
-        { id: 'HTML & CSS', src: "https://via.placeholder.com/300x200" },
-        { id: 'HTML & CSS', src: "https://via.placeholder.com/300x200" },
-        { id: 'ReactJS', src: "https://via.placeholder.com/300x200" },
-        { id: 'ReactJS', src: "https://via.placeholder.com/300x200" },
-        { id: 'ReactJS', src: "https://via.placeholder.com/300x200" },
-        { id: 'HTML & CSS', src: "https://via.placeholder.com/300x200" },
-        { id: 'HTML & CSS', src: "https://via.placeholder.com/300x200" },
-        { id: 'ReactJS', src: "https://via.placeholder.com/300x200" },
-        { id: 'HTML & CSS', src: "https://via.placeholder.com/300x200" },
-        { id: 'HTML & CSS', src: "https://via.placeholder.com/300x200" },
-        { id: 'ReactJS', src: "https://via.placeholder.com/300x200" }
+        { id: 'HTML & CSS', src: `${process.env.PUBLIC_URL}/assets/card-spread-effect.jpg`, alt: 'Card Spread Effect', link: 'https://card-spread-effect.web.app/' },
+        { id: 'HTML & CSS', src: `${process.env.PUBLIC_URL}/assets/hacker-effect-text.jpg`, alt: 'Hacker Text Effect', link: 'https://hacker-effect.web.app/' },
+        { id: 'HTML & CSS', src: `${process.env.PUBLIC_URL}/assets/hover-effect.jpg`, alt: 'Hover Effect', link: 'https://hover-effect-2c40c.web.app/' }
     ];
 
     const navItems = ['All', 'HTML & CSS', 'ReactJS'];
