@@ -7,7 +7,7 @@ const Skills = () => {
         { title: 'HTML & CSS', percentage: 90 },
         { title: 'Sass', percentage: 80 },
         { title: 'Git', percentage: 50 },
-        { title: 'ReactJS', percentage: 60 },
+        { title: 'ReactJS', percentage: 70 },
         { title: 'JavaScript', percentage: 80 },
         { title: 'NodeJS', percentage: 50 },
     ];

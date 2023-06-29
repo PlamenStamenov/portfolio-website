@@ -3,7 +3,8 @@ import './Navigation.scss';
 import {
     FaLinkedin,
     FaPhoneSquareAlt,
-    FaEnvelope
+    FaEnvelope,
+    FaGithub
 } from 'react-icons/fa';
 
 const Navigation = ({ activeItem, handleAnchorClick, navItems }) => {
@@ -47,6 +48,11 @@ const Navigation = ({ activeItem, handleAnchorClick, navItems }) => {
                             <FaEnvelope />
                         </a>
                     </li>
+                    <li>
+                        <a href="https://github.com/PlamenStamenov"  target="_blank" rel="noopener noreferrer">
+                            <FaGithub />
+                        </a>
+                        </li>
                 </ul>
                 <p className="copyright">© {currentYear} Plamen Stamenov</p>
             </div>

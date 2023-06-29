@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState, createRef } from 'react';
 import Navigation from './components/Navigation/Navigation';
-import Intro from './components/Intro/Intro';
 import About from './components/About/About';
 import Skills from './components/Skills/Skills';
 import Experience from './components/Education-Experience/Experience';
@@ -8,7 +7,6 @@ import Education from './components/Education-Experience/Education';
 import Portfolio from './components/Portfolio/Portfolio';
 import Contacts from './components/Contacts/Contacts';
 import {
-    FaHome,
     FaUser,
     FaCode,
     FaBriefcase,
@@ -22,11 +20,10 @@ import './App.scss'
 
 
 function App() {
-    const [activeItem, setActiveItem] = useState('intro');
+    const [activeItem, setActiveItem] = useState('about');
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const navItems = [
-        { id: 'intro', title: 'Intro', component: Intro, icon: FaHome },
         { id: 'about', title: 'About', component: About, icon: FaUser },
         { id: 'skills', title: 'Skills', component: Skills, icon: FaCode },
         { id: 'experience', title: 'Experience', component: Experience, icon: FaBriefcase },

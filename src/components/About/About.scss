@@ -1,11 +1,12 @@
 .about {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px 0 rgba(0,0,0,.2);
     display: flex;
     flex-direction: column;
-    padding: 50px 50px;
-    border-radius: 20px;
-    box-shadow: 0 6px 15px 0 rgba(0, 0, 0, 0.2);
-    gap: 70px;
-    background-color: #fff;
+    height: 620px;
+    padding: 0 50px;
+    justify-content: space-evenly;
 
     .about__title {
         font-size: 24px;
